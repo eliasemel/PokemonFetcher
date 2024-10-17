@@ -8,4 +8,7 @@
 import Foundation
 enum PokemonError: Error {
     case generic(Error)
+    case invalidResponse
+    case decodingError(Error)
+    case networkError(Error)
 }

@@ -34,50 +34,6 @@
             endingLineNumber = "39"
             landmarkName = "testNextPage()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F76EBCE3-2F3D-474F-B5C7-74F8956EBFB8 - e830f1fba17d5344"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for PokemonFetcherTests.ListViewModelTest.testNextPage() async -&gt; ()"
-                  moduleName = "PokemonFetcherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emel.elias@schibsted.com/Documents/study/PokemonFetcher/PokemonFetcherTests/ListViewModelTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39">
-               </Location>
-               <Location
-                  uuid = "F76EBCE3-2F3D-474F-B5C7-74F8956EBFB8 - a3574224e10ff045"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) suspend resume partial function for PokemonFetcherTests.ListViewModelTest.testNextPage() async -&gt; ()"
-                  moduleName = "PokemonFetcherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emel.elias@schibsted.com/Documents/study/PokemonFetcher/PokemonFetcherTests/ListViewModelTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39">
-               </Location>
-               <Location
-                  uuid = "F76EBCE3-2F3D-474F-B5C7-74F8956EBFB8 - 9bf5d266219e9146"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for PokemonFetcherTests.ListViewModelTest.testNextPage() async -&gt; ()"
-                  moduleName = "PokemonFetcherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emel.elias@schibsted.com/Documents/study/PokemonFetcher/PokemonFetcherTests/ListViewModelTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

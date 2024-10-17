@@ -80,5 +80,5 @@ struct RemoteImage: UIViewRepresentable {
 }
 
 #Preview {
-    DetailView(model: .init(pokemon: .init(name: "dsefds", url: URL(string: "http://test.com")!), service: DefaultPokemonService()))
+    DetailView(model: .init(pokemon: .init(name: "dsefds", url: URL(string: "http://test.com")!), service: MockPokemonService()))
 }
