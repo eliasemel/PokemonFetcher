@@ -8,14 +8,14 @@
 import Foundation
 import Combine
 
-typealias PokemonListState = LoadState<ContentPage<PokemonListItem>>
+typealias PokemonListState = LoadState<PageContent<PokemonListItem>>
 
 @MainActor
 class ListViewModel: ObservableObject {
     private(set) var service: PokemonService
     
     //load with an empty contentpage
-    @Published var state: PokemonListState = .loaded(ContentPage())
+    @Published var state: PokemonListState = .loaded(PageContent())
     
     init(service: PokemonService) {
         self.service = service
@@ -23,7 +23,6 @@ class ListViewModel: ObservableObject {
             await fetchPokes()
         }
     }
-    
     
     /// Fetch the `ContentPage` for particular URL
     /// - Parameter url: The url to fetch

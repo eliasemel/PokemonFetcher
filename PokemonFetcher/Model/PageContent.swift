@@ -1,5 +1,5 @@
 //
-//  ContentPage.swift
+//  PageContent.swift
 //  PokemonFetcher
 //
 //  Created by Emel Elias on 2024-10-17.
@@ -7,7 +7,7 @@
 
 import Foundation
 /// Represents a page in response
-struct ContentPage<Model: Decodable & Identifiable>: Decodable {
+struct PageContent<Model: Decodable & Identifiable>: Decodable {
     
     let count: Int
     let next: URL?
@@ -21,7 +21,7 @@ struct ContentPage<Model: Decodable & Identifiable>: Decodable {
         self.results = results
     }
     
-    func with(results: [Model]) -> ContentPage {
+    func with(results: [Model]) -> PageContent {
         .init(
             count: self.count,
             next: self.next,
@@ -32,7 +32,7 @@ struct ContentPage<Model: Decodable & Identifiable>: Decodable {
 }
 
 
-extension ContentPage {
+extension PageContent {
     
     var hasNext: Bool {
         self.next != nil

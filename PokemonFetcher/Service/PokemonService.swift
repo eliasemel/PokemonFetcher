@@ -8,5 +8,6 @@
 import Foundation
 
 protocol PokemonService {
-    func fetchPokemons(url: URL) async throws -> ContentPage<PokemonListItem>
+    func fetchPokemons(url: URL) async throws -> PageContent<PokemonListItem>
+    func details(url: URL) async throws -> Pokemon
 }

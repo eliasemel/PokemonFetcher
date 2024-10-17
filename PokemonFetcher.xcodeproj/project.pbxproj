@@ -10,11 +10,15 @@
 		8F309DEE2CC0FD7900CE3F67 /* PokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DED2CC0FD7900CE3F67 /* PokemonService.swift */; };
 		8F309DF02CC0FDDA00CE3F67 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DEF2CC0FDDA00CE3F67 /* Pokemon.swift */; };
 		8F309DF22CC0FE5500CE3F67 /* PokemonListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DF12CC0FE5500CE3F67 /* PokemonListItem.swift */; };
-		8F309DF42CC0FF0200CE3F67 /* ContentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DF32CC0FF0200CE3F67 /* ContentPage.swift */; };
+		8F309DF42CC0FF0200CE3F67 /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DF32CC0FF0200CE3F67 /* PageContent.swift */; };
 		8F309DF62CC0FF3F00CE3F67 /* DefaultPokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DF52CC0FF3F00CE3F67 /* DefaultPokemonService.swift */; };
 		8F309DF82CC101C400CE3F67 /* PokeMonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DF72CC101C400CE3F67 /* PokeMonError.swift */; };
 		8F309DFA2CC1045F00CE3F67 /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DF92CC1045F00CE3F67 /* LoadState.swift */; };
 		8F309DFC2CC104C000CE3F67 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DFB2CC104C000CE3F67 /* ListViewModel.swift */; };
+		8F309DFE2CC115E600CE3F67 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DFD2CC115E600CE3F67 /* DetailView.swift */; };
+		8F309E002CC115FC00CE3F67 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309DFF2CC115FC00CE3F67 /* DetailViewModel.swift */; };
+		8F309E022CC117C900CE3F67 /* MokePokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F309E012CC117C900CE3F67 /* MokePokemonService.swift */; };
+		8F309E052CC118B100CE3F67 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8F309E042CC118B100CE3F67 /* AlamofireImage */; };
 		8FCFE0FF2CC0F69900220FE7 /* PokemonFetcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCFE0FE2CC0F69900220FE7 /* PokemonFetcherApp.swift */; };
 		8FCFE1012CC0F69900220FE7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCFE1002CC0F69900220FE7 /* ListView.swift */; };
 		8FCFE1032CC0F69B00220FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FCFE1022CC0F69B00220FE7 /* Assets.xcassets */; };
@@ -45,11 +49,14 @@
 		8F309DED2CC0FD7900CE3F67 /* PokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonService.swift; sourceTree = "<group>"; };
 		8F309DEF2CC0FDDA00CE3F67 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8F309DF12CC0FE5500CE3F67 /* PokemonListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListItem.swift; sourceTree = "<group>"; };
-		8F309DF32CC0FF0200CE3F67 /* ContentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPage.swift; sourceTree = "<group>"; };
+		8F309DF32CC0FF0200CE3F67 /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
 		8F309DF52CC0FF3F00CE3F67 /* DefaultPokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPokemonService.swift; sourceTree = "<group>"; };
 		8F309DF72CC101C400CE3F67 /* PokeMonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeMonError.swift; sourceTree = "<group>"; };
 		8F309DF92CC1045F00CE3F67 /* LoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadState.swift; sourceTree = "<group>"; };
 		8F309DFB2CC104C000CE3F67 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		8F309DFD2CC115E600CE3F67 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8F309DFF2CC115FC00CE3F67 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		8F309E012CC117C900CE3F67 /* MokePokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokePokemonService.swift; sourceTree = "<group>"; };
 		8FCFE0FB2CC0F69900220FE7 /* PokemonFetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonFetcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCFE0FE2CC0F69900220FE7 /* PokemonFetcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonFetcherApp.swift; sourceTree = "<group>"; };
 		8FCFE1002CC0F69900220FE7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F309E052CC118B100CE3F67 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +107,7 @@
 			children = (
 				8F309DEF2CC0FDDA00CE3F67 /* Pokemon.swift */,
 				8F309DF12CC0FE5500CE3F67 /* PokemonListItem.swift */,
-				8F309DF32CC0FF0200CE3F67 /* ContentPage.swift */,
+				8F309DF32CC0FF0200CE3F67 /* PageContent.swift */,
 				8F309DF72CC101C400CE3F67 /* PokeMonError.swift */,
 			);
 			path = Model;
@@ -110,6 +118,7 @@
 			children = (
 				8FCFE0FE2CC0F69900220FE7 /* PokemonFetcherApp.swift */,
 				8FCFE1002CC0F69900220FE7 /* ListView.swift */,
+				8F309DFD2CC115E600CE3F67 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			children = (
 				8F309DF92CC1045F00CE3F67 /* LoadState.swift */,
 				8F309DFB2CC104C000CE3F67 /* ListViewModel.swift */,
+				8F309DFF2CC115FC00CE3F67 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 			children = (
 				8F309DED2CC0FD7900CE3F67 /* PokemonService.swift */,
 				8F309DF52CC0FF3F00CE3F67 /* DefaultPokemonService.swift */,
+				8F309E012CC117C900CE3F67 /* MokePokemonService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -207,6 +218,9 @@
 			dependencies = (
 			);
 			name = PokemonFetcher;
+			packageProductDependencies = (
+				8F309E042CC118B100CE3F67 /* AlamofireImage */,
+			);
 			productName = PokemonFetcher;
 			productReference = 8FCFE0FB2CC0F69900220FE7 /* PokemonFetcher.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +293,9 @@
 				Base,
 			);
 			mainGroup = 8FCFE0F22CC0F69900220FE7;
+			packageReferences = (
+				8F309E032CC1187A00CE3F67 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 8FCFE0FC2CC0F69900220FE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,11 +339,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F309DFC2CC104C000CE3F67 /* ListViewModel.swift in Sources */,
+				8F309E022CC117C900CE3F67 /* MokePokemonService.swift in Sources */,
 				8F309DF82CC101C400CE3F67 /* PokeMonError.swift in Sources */,
-				8F309DF42CC0FF0200CE3F67 /* ContentPage.swift in Sources */,
+				8F309DF42CC0FF0200CE3F67 /* PageContent.swift in Sources */,
 				8FCFE1012CC0F69900220FE7 /* ListView.swift in Sources */,
 				8F309DF22CC0FE5500CE3F67 /* PokemonListItem.swift in Sources */,
+				8F309DFE2CC115E600CE3F67 /* DetailView.swift in Sources */,
 				8F309DF02CC0FDDA00CE3F67 /* Pokemon.swift in Sources */,
+				8F309E002CC115FC00CE3F67 /* DetailViewModel.swift in Sources */,
 				8F309DF62CC0FF3F00CE3F67 /* DefaultPokemonService.swift in Sources */,
 				8F309DFA2CC1045F00CE3F67 /* LoadState.swift in Sources */,
 				8FCFE0FF2CC0F69900220FE7 /* PokemonFetcherApp.swift in Sources */,
@@ -660,6 +680,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F309E032CC1187A00CE3F67 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F309E042CC118B100CE3F67 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F309E032CC1187A00CE3F67 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FCFE0F32CC0F69900220FE7 /* Project object */;
 }

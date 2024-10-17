@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PokemonFetcher
-//
-//  Created by Emel Elias on 2024-10-17.
-//
-
 import SwiftUI
 
 struct ListView: View {
@@ -15,13 +8,15 @@ struct ListView: View {
         case .loaded(let page):
             NavigationView {
                 List(page.results) { pokemon in
-                    HStack {
-                        Text(pokemon.name)
-                            .font(.headline)
+                    NavigationLink(destination: DetailView(model: .init(pokemon: pokemon, service: DefaultPokemonService()))) {
+                        HStack {
+                            Text(pokemon.name)
+                                .font(.headline)
+                        }
                     }
                     .onAppear {
-                        let lastPokeMon = page.results.last
-                        if lastPokeMon == pokemon {
+                        let lastPokemon = page.results.last
+                        if lastPokemon == pokemon {
                             Task {
                                 await viewModel.nextPage()
                             }
@@ -39,3 +34,4 @@ struct ListView: View {
 #Preview {
     ListView()
 }
+
