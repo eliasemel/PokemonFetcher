@@ -23,48 +23,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "190E6D90-5A21-433A-B8FC-240373A4A7A3"
+            uuid = "12C6E6CB-3F75-40BC-B858-41A12400CA93"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PokemonFetcher/ViewModel/ListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchPokes(url:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "nextPage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8A944282-43DD-48DC-A438-CC87EEE0D6C8"
+            uuid = "38C0A8FE-1A39-433D-827B-B470CA753C0A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PokemonFetcher/ViewModel/ListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "fetchPokes(url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F111E379-FB22-47A3-9A52-760535F04A23"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PokemonFetcher/ViewModel/ListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "init(service:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "nextPage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

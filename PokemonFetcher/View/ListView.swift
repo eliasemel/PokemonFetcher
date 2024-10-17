@@ -19,11 +19,17 @@ struct ListView: View {
                         Text(pokemon.name)
                             .font(.headline)
                     }
+                    .onAppear {
+                        let lastPokeMon = page.results.last
+                        if lastPokeMon == pokemon {
+                            Task {
+                                await viewModel.nextPage()
+                            }
+                        }
+                    }
                 }
                 .navigationTitle("Pokémon List")
             }
-        case .empty:
-            EmptyView()
         default:
             EmptyView()
         }

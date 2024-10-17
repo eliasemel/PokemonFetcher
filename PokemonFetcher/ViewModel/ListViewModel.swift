@@ -14,13 +14,13 @@ typealias PokemonListState = LoadState<ContentPage<PokemonListItem>>
 class ListViewModel: ObservableObject {
     private(set) var service: PokemonService
     
-    @Published var state: PokemonListState = .empty
+    //load with an empty contentpage
+    @Published var state: PokemonListState =  .loaded(ContentPage())
     
     init(service: PokemonService) {
         self.service = service
-        self.state = .empty
         Task {
-           await fetchPokes()
+            await fetchPokes()
         }
     }
     
@@ -28,13 +28,20 @@ class ListViewModel: ObservableObject {
     /// Fetch the `ContentPage` for particular URL
     /// - Parameter url: The url to fetch
     func fetchPokes(url: URL = URL(string: "https://pokeapi.co/api/v2/pokemon")!) async {
-        state = .loading
-        do {
-            let page = try await self.service.fetchPokemons(url: url)
-            self.state = .loaded(page)
-        } catch let error  {
-            self.state = .failure(error as? PokemonError)
+        switch state {
+        case .loaded(let oldPage):
+            do {
+                let newPage = try await self.service.fetchPokemons(url: url)
+                let updatedResult = oldPage.results + newPage.results
+                let newContentPage = newPage.with(results: updatedResult)
+                self.state = .loaded(newContentPage)
+            } catch let error  {
+                self.state = .failure(error as? PokemonError)
+            }
+        default: print("no ops")
+            
         }
+        
     }
     
     
