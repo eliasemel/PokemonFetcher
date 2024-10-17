@@ -10,7 +10,7 @@ import SwiftUI
 struct PokemonFetcherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
         }
     }
 }
