@@ -7,7 +7,7 @@
 
 import Foundation
 /// Represents a page in response
-struct ContentPage<Model: Decodable>: Decodable {
+struct ContentPage<Model: Decodable & Identifiable>: Decodable {
     
     let count: Int
     let next: URL?

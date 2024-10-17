@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct ListView: View {
+    @StateObject private var viewModel = ListViewModel(service: DefaultPokemonService())
+
     var body: some View {
-        EmptyView()
+        switch viewModel.state {
+        case .loaded(let page):
+            NavigationView {
+                List(page.results) { pokemon in
+                    HStack {
+                        Text(pokemon.name)
+                            .font(.headline)
+                    }
+                }
+                .navigationTitle("Pokémon List")
+            }
+        case .empty:
+            EmptyView()
+        default:
+            EmptyView()
+        }
+        
     }
 }
 

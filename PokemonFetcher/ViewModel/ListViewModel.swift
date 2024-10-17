@@ -18,12 +18,16 @@ class ListViewModel: ObservableObject {
     
     init(service: PokemonService) {
         self.service = service
+        self.state = .empty
+        Task {
+           await fetchPokes()
+        }
     }
     
     
     /// Fetch the `ContentPage` for particular URL
     /// - Parameter url: The url to fetch
-    func fetchPokes(url: URL) async {
+    func fetchPokes(url: URL = URL(string: "https://pokeapi.co/api/v2/pokemon")!) async {
         state = .loading
         do {
             let page = try await self.service.fetchPokemons(url: url)

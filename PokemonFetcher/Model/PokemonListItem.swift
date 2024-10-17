@@ -6,7 +6,8 @@
 //
 
 import Foundation
-struct PokemonListItem: Decodable {
+struct PokemonListItem: Decodable, Identifiable {
+    var id: URL { url }
     let name: String
     let url: URL
 }
