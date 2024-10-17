@@ -15,7 +15,7 @@ class ListViewModel: ObservableObject {
     private(set) var service: PokemonService
     
     //load with an empty contentpage
-    @Published var state: PokemonListState =  .loaded(ContentPage())
+    @Published var state: PokemonListState = .loaded(ContentPage())
     
     init(service: PokemonService) {
         self.service = service
