@@ -1,6 +1,6 @@
 # PokemonFetcher
 
-Simple thing MVVM based app that fetches list of pokemons and navigates to the details page.
+A Simple MVVM based app that fetches list of pokemons and navigates to the details page.
 
 ### Showcases
 
