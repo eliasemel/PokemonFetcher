@@ -11,5 +11,5 @@ enum LoadState<Content> {
     case empty
     case loading
     case loaded(Content)
-    case failure(PokemonError)
+    case failure(PokemonError?)
 }
