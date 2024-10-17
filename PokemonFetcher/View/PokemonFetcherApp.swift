@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 @main
 struct PokemonFetcherApp: App {
     var body: some Scene {

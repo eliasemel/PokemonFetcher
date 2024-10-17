@@ -16,6 +16,15 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .task {
+            do {
+                let t = try await DefaultPokemonService().fetchPokemons(url: URL(string: "https://pokeapi.co/api/v2/pokemon")!)
+                print("%@", t)
+            } catch {
+                
+            }
+            
+        }
     }
 }
 
