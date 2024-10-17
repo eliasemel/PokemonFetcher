@@ -1,5 +1,5 @@
 //
-//  PokeMonError.swift
+//  PokemonError.swift
 //  PokemonFetcher
 //
 //  Created by Emel Elias on 2024-10-17.

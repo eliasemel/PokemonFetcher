@@ -20,15 +20,6 @@ struct PageContent<Model: Decodable & Identifiable>: Decodable {
         self.previous = previous
         self.results = results
     }
-    
-    func with(results: [Model]) -> PageContent {
-        .init(
-            count: self.count,
-            next: self.next,
-            previous: self.previous,
-            results: results
-        )
-    }
 }
 
 
@@ -36,5 +27,17 @@ extension PageContent {
     
     var hasNext: Bool {
         self.next != nil
+    }
+    
+    /// A helper extension function to populate the page with new contents
+    /// - Parameter results: the new contents
+    /// - Returns: The `PageContent` with new contents
+    func with(results: [Model]) -> PageContent {
+        .init(
+            count: self.count,
+            next: self.next,
+            previous: self.previous,
+            results: results
+        )
     }
 }

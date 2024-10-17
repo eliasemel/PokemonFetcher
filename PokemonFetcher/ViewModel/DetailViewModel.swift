@@ -10,23 +10,24 @@ import Combine
 
 @MainActor
 class DetailViewModel: ObservableObject {
-        
+    
     @Published var state: LoadState<Pokemon> = .loading
     
     private let service: PokemonService
-    
-    private var pokemonDetailsPublisher: AnyCancellable?
-    
+        
     init(pokemon: PokemonListItem, service: PokemonService) {
         self.service = service
+        fetchDetails(pokemon)
+    }
+    
+    func fetchDetails(_ pokeListItem: PokemonListItem) {
         Task {
             do {
-                let details = try await service.details(url: pokemon.url)
+                let details = try await service.details(url: pokeListItem.url)
                 self.state = .loaded(details)
             } catch let error {
                 self.state = .failure(error as? PokemonError)
             }
         }
     }
-    
 }
