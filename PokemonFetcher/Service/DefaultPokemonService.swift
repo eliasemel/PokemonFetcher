@@ -6,3 +6,8 @@
 //
 
 import Foundation
+class DefaultPokemonService: PokemonService {
+    func fetchPokemons(url: URL) async {
+        
+    }
+}

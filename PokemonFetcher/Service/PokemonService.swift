@@ -8,5 +8,5 @@
 import Foundation
 
 protocol PokemonService {
-    func fetchPokemons() async
+    func fetchPokemons(url: URL) async
 }
