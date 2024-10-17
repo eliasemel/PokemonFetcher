@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     @StateObject private var viewModel = ListViewModel(service: DefaultPokemonService())
-
+    
     var body: some View {
         switch viewModel.state {
         case .loaded(let page):
@@ -27,7 +27,6 @@ struct ListView: View {
         default:
             EmptyView()
         }
-        
     }
 }
 

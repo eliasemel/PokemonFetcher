@@ -55,22 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F4CACE4D-10E8-4544-B5BD-0FE11B806DEC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PokemonFetcher/View/ListView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F111E379-FB22-47A3-9A52-760535F04A23"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -82,50 +66,6 @@
             endingLineNumber = "23"
             landmarkName = "init(service:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F111E379-FB22-47A3-9A52-760535F04A23 - 2b69e4b95d1ddccf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in PokemonFetcher.ListViewModel.init(service: PokemonFetcher.PokemonService) -&gt; PokemonFetcher.ListViewModel"
-                  moduleName = "PokemonFetcher"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emel.elias@schibsted.com/Documents/study/PokemonFetcher/PokemonFetcher/ViewModel/ListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23">
-               </Location>
-               <Location
-                  uuid = "F111E379-FB22-47A3-9A52-760535F04A23 - 2ab1bf0389ba6830"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in PokemonFetcher.ListViewModel.init(service: PokemonFetcher.PokemonService) -&gt; PokemonFetcher.ListViewModel"
-                  moduleName = "PokemonFetcher"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emel.elias@schibsted.com/Documents/study/PokemonFetcher/PokemonFetcher/ViewModel/ListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23">
-               </Location>
-               <Location
-                  uuid = "F111E379-FB22-47A3-9A52-760535F04A23 - 7fccc7d9f93418c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in PokemonFetcher.ListViewModel.init(service: PokemonFetcher.PokemonService) -&gt; PokemonFetcher.ListViewModel"
-                  moduleName = "PokemonFetcher"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emel.elias@schibsted.com/Documents/study/PokemonFetcher/PokemonFetcher/ViewModel/ListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
