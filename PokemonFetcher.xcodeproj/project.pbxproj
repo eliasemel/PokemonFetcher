@@ -71,6 +71,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F309DE82CC0FCCF00CE3F67 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8F309DE92CC0FCCF00CE3F67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F309DEA2CC0FCD900CE3F67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F309DEB2CC0FCD900CE3F67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F309DEC2CC0FCD900CE3F67 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		8FCFE0F22CC0F69900220FE7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +129,11 @@
 		8FCFE0FD2CC0F69900220FE7 /* PokemonFetcher */ = {
 			isa = PBXGroup;
 			children = (
+				8F309DEC2CC0FCD900CE3F67 /* Service */,
+				8F309DEA2CC0FCD900CE3F67 /* View */,
+				8F309DEB2CC0FCD900CE3F67 /* ViewModel */,
+				8F309DE82CC0FCCF00CE3F67 /* Helper */,
+				8F309DE92CC0FCCF00CE3F67 /* Model */,
 				8FCFE0FE2CC0F69900220FE7 /* PokemonFetcherApp.swift */,
 				8FCFE1002CC0F69900220FE7 /* ContentView.swift */,
 				8FCFE1022CC0F69B00220FE7 /* Assets.xcassets */,
