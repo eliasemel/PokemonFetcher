@@ -73,9 +73,9 @@ struct RemoteImage: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIImageView, context: Context) {
-        uiView.af.setImage(withURL: url) { _ in
+        uiView.af.setImage(withURL: url, completion:  { _ in
             uiView.backgroundColor = .white
-        }
+        })
     }
 }
 

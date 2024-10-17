@@ -8,11 +8,11 @@
 import Foundation
 class MockPokemonService: PokemonService {
     func fetchPokemons(url: URL) async throws -> PageContent<PokemonListItem> {
-        .init()
+        return MockData.pokeMonList()
     }
     
     func details(url: URL) async throws -> Pokemon {
-        Pokemon(name: "test", height: 3, weight: 3)
+        return MockData.pokemon()
     }
 }
 

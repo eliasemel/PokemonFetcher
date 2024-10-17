@@ -20,13 +20,13 @@ class ListViewModel: ObservableObject {
     init(service: PokemonService) {
         self.service = service
         Task {
-            await fetchPokes()
+            await fetchPokemones()
         }
     }
     
     /// Fetch the `ContentPage` for particular URL
     /// - Parameter url: The url to fetch
-    func fetchPokes(url: URL = URL(string: "https://pokeapi.co/api/v2/pokemon")!) async {
+    func fetchPokemones(url: URL = URL(string: "https://pokeapi.co/api/v2/pokemon")!) async {
         switch state {
         case .loaded(let oldPage):
             do {
@@ -49,6 +49,6 @@ class ListViewModel: ObservableObject {
         guard case .loaded(let currentPage) = state, let next = currentPage.next else {
             return
         }
-        await fetchPokes(url: next)
+        await fetchPokemones(url: next)
     }
 }
