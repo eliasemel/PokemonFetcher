@@ -7,17 +7,17 @@
 
 import Foundation
 class DefaultPokemonService: PokemonService {
-    let cacheHelper: CacheDataFetchHelper
+    let datafetchable: Datafetchable
     
-    init(cacheHelper: CacheDataFetchHelper) {
-        self.cacheHelper = cacheHelper
+    init(datafetchable: Datafetchable) {
+        self.datafetchable = datafetchable
     }
     
     func fetchPokemons(url: URL) async throws -> PageContent<PokemonListItem> {
-        try await self.cacheHelper.fetchData(url: url, useCache: false)
+        try await self.datafetchable.fetch(url: url)
     }
     func details(url: URL) async throws -> Pokemon {
-        try await self.cacheHelper.fetchData(url: url, useCache: false)
+        try await self.datafetchable.fetch(url: url)
     }
 }
 

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ListView: View {
-    @StateObject private var viewModel = ListViewModel(service: DefaultPokemonService(cacheHelper: CacheDataFetchHelper()))
+    @StateObject var viewModel: ListViewModel
     @State private var navigationPath = NavigationPath()
 
     var body: some View {
@@ -26,7 +26,7 @@ struct ListView: View {
                 }
                 .navigationTitle("Pokémon List")
                 .navigationDestination(for: PokemonListItem.self) { pokemon in
-                    DetailView(model: .init(pokemon: pokemon, service: DefaultPokemonService(cacheHelper: CacheDataFetchHelper())))
+                    DetailView(model: .init(pokemon: pokemon, service: viewModel.service))
                 }
             }
         default:
@@ -36,5 +36,5 @@ struct ListView: View {
 }
 
 #Preview {
-    ListView()
+    ListView(viewModel: ListViewModel(service: MockPokemonService()))
 }

@@ -6,25 +6,29 @@
 //
 
 import Foundation
-class CacheDataFetchHelper {
+protocol Datafetchable {
+    func fetch<T: Decodable>(url: URL) async throws -> T
+}
+
+class URLCacheDataFetchHelper: Datafetchable {
     private let useCache: Bool
     private let session: URLSession
     private let cache: URLCache
-    // Custom URLCache configuration
     init(
         session: URLSession = .shared,
         cacheSize: Int = 10 * 1024 * 1024,
-        useCache: Bool = true) { // 10MB cache size
-            let memoryCapacity = cacheSize // In-memory cache size
-            let diskCapacity = cacheSize * 2 // Disk cache size
-            let cache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: "pokemonCache")
-            self.useCache = useCache
-            self.session = session
-            self.cache = cache
-            
-            // Set the URLCache for URLSession
-            URLCache.shared = cache
-        }
+        useCache: Bool = true
+    ) { // 10MB cache size
+        let memoryCapacity = cacheSize // In-memory cache size
+        let diskCapacity = cacheSize * 2 // Disk cache size
+        let cache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: "pokemonCache")
+        self.useCache = useCache
+        self.session = session
+        self.cache = cache
+        
+        // Set the URLCache for URLSession
+        URLCache.shared = cache
+    }
     /*
      eg
      GET /api/pokemon-list HTTP/1.1
@@ -32,7 +36,7 @@ class CacheDataFetchHelper {
      Cache-Control: max-age=5
      */
     // Generic method to fetch data and decode it with caching and cache control
-    func fetchData<T: Decodable>(url: URL, useCache: Bool) async throws -> T {
+    func fetch<T: Decodable>(url: URL) async throws -> T {
         var request = URLRequest(url: url)
         
         // Modify cache policy: Use cache or force reload
