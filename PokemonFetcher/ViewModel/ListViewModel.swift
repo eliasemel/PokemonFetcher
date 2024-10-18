@@ -15,7 +15,7 @@ class ListViewModel: ObservableObject {
     private(set) var service: PokemonService
     
     //load with an empty contentpage
-    @Published var state: PokemonListState = .loaded(PageContent())
+    @Published var state: PokemonListState = .loading
     
     init(service: PokemonService) {
         self.service = service
@@ -28,6 +28,13 @@ class ListViewModel: ObservableObject {
     /// - Parameter url: The url to fetch
     func fetchPokemones(url: URL = URL(string: "https://pokeapi.co/api/v2/pokemon")!) async {
         switch state {
+        case .loading:
+            do {
+                let newContentPage = try await self.service.fetchPokemons(url: url)
+                self.state = .loaded(newContentPage)
+            } catch let error  {
+                self.state = .failure(error as? PokemonError)
+            }
         case .loaded(let oldPage):
             do {
                 let newPage = try await self.service.fetchPokemons(url: url)
@@ -37,8 +44,8 @@ class ListViewModel: ObservableObject {
             } catch let error  {
                 self.state = .failure(error as? PokemonError)
             }
-        default: print("no ops")
-            
+        case .failure:
+            print("no ops")
         }
         
     }

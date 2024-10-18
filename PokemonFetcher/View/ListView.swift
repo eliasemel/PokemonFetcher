@@ -29,8 +29,10 @@ struct ListView: View {
                     DetailView(model: .init(pokemon: pokemon, service: viewModel.service))
                 }
             }
-        default:
-            EmptyView()
+        case .failure(_):
+            Text("oops someting went wrong!!")
+        case .loading:
+            CircularLoaderView()
         }
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct PokemonFetcherApp: App {
     var body: some Scene {
         WindowGroup {
-            ListView(viewModel: ListViewModel(service: DefaultPokemonService(datafetchable: URLCacheDataFetchHelper())))
+            ListView(viewModel: ListViewModel(service: DefaultPokemonService(datafetchable: URLCachedDataFetchHelper())))
         }
     }
 }
